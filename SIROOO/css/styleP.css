@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    background: #030024;
+}
+.main_product{
+    height: 100%;
+    width: 100%;
+}
+.product_slideshow{
+    
+}
+.img_show{
+    background-image: url('../img/products/product_img.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+.img_content{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;left:50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+}
+.img_tag{
+    font-weight: bolder;
+    margin-bottom: 20px;
+    animation: anim1 1s;
+}
+.img_title{
+    font-weight: bolder;
+    font-size: 50px;
+    margin-bottom: 30px;
+    animation: anim2 1s;
+    animation-delay: 1s;
+}
+.img_description{
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 35px;
+    margin-bottom: 40px;
+    animation: anim3 1s;
+    animation-delay: 2s;
+}
+.hashtag span{
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    border-radius: 50px;
+    animation: anim4 1s;
+    animation-delay: 3s;
+}
+
+.pro_name{
+	color:#fff;
+    margin: 40px 0;
+    padding: 10px 0;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+.prod_type{
+    display: flex;
+    width: 100%;
+	box-shadow: 0px 2px 12px #fff;
+}
+.prod_type div{
+    width: 33.33%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 2px #fff;
+}
+.prod_type div a{
+	color:#fff;
+    padding: 30px 0;
+	width:100%;
+	display:block;
+}
+.prod_type div a:hover{
+	background:#fff;
+	color:#272883;
+	transition: 2s ease;
+}
+#p1,#p2,#p3{
+	display:none;
+}
+.all-prods{
+    margin: 100px 0; 
+}
+.prods{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.prod{
+    overflow: hidden;
+    border-radius:15px ;
+    color: #fff;
+    background: #000;
+    width: 210px;
+    height: 230px;
+    margin: 0 auto 50px;
+    box-shadow: 0px 10px 15px #f00;
+    padding:20px 10px;
+}
+.prod:hover{
+    margin-top: -30px;
+    height: 260px;
+    box-shadow: 0px 10px 15px #0f0;
+	transition: 1s ease;
+}
+
+.prod_img img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 150px;
+}
+.prod_details{
+    text-align: center;
+    padding: 15px 30px;
+}
+.prod-name{
+    font-weight: bolder;
+}
+.prod-price{
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.buynow{
+    display: none;
+    text-align: center;
+}
+.buynow a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 20px;
+    border: 2px solid #fff;
+    border-radius: 7px;
+}
+.buynow a:hover{
+    color: #f00;
+    border-color: #f00;
+}
+.prod:hover .buynow{
+    display: block;
+}
+.buy_model{
+    box-shadow:-10px 1px 20px #f00,10px 1px 20px #0f0,0px 1px 20px #0f0;
+    border-radius: 30px;
+    padding: 30px;
+    /*! height: 350px; */
+    max-width: 330px;
+    /*! background: #000; */
+    position: fixed;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+#buy-model{
+    display: none;
+}
+.confirm-title{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+input,textarea{
+	font-weight:bold;
+	opacity:1;
+	color:#fff;
+    width: calc(100% - 10px);
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid #fff;
+    background: none;
+}
+.order form .data{
+    border: 1px solid #fff;
+}
+.data::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+.mybtn{
+    font-weight: bold;
+    width: auto;
+    padding: 10px 20px;
+}
+.mybtn:hover{
+	background:#fff;
+	color:#272883;
+	transition:1s ease;
+	cursor:pointer;
+}
+/*-------------Responsive----------------*/
+
+@media screen and (max-width:575px){
+	.img_show{
+		background-size: contain;
+		height: 100%;
+	}
+	.img_content{
+		position:static;
+		transform:none;
+		width:100%;
+		padding: 30px 0;
+	}
+	.hashtag{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.hashtag span{
+		margin: 0 auto 10px;
+	}
+	.prod_type{
+		display:block;
+	}
+	.prod_type div{
+		width:100%;
+	}
+	.buy_model{
+		max-width:80%;
+		width:100%;
+		padding:10px;
+	}
+}
