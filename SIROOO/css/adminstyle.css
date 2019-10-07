@@ -1,0 +1,237 @@
+
+	body{
+		margin:0;
+		position:fixed;
+		width:100%;
+		height:100%;
+	}
+	a{
+		text-decoration:none;color:#fff;
+	}
+	.active{
+		background:#272883;
+	}
+	.admin-header{
+		display:flex;
+		flex-wrap:wrap;
+		align-content:center;
+		height:100px;
+		background:#000;
+		box-shadow:0px 1px 15px #fff;
+		position:relative;
+		z-index:100;
+		padding: 0 10px;
+		text-align:center;
+	}
+	.ad-title{
+		margin:0 auto;
+		color:#fff;
+		font-size:30px;
+		font-weight:bold;
+	}
+	.head-drop-links{
+		display: none;
+		border: none;
+		padding: 0px 6px;
+		border-radius: 4px;
+		cursor: pointer;
+		float:right!important;
+	}
+	.head-drop-links:hover{
+		background-color: #ff8000;
+	}
+	.head-drop-links .material-icons{
+		font-size: 28px;
+	}
+	.head-drop-links:hover .material-icons{
+		color: #fff;
+	}
+	.ad-main{
+		float:left;
+		width:100%;
+		background:#272883;
+		position:relative;
+		bottom:0;
+		min-height:calc(100vh - 100px);
+	}
+	.ad-sidebar{
+		float:left;
+		position:relative;
+		bottom:0;
+		min-height:calc(100vh - 100px);
+		width:25%;
+		background:#000;
+		box-shadow:0px 1px 15px #fff;
+	}
+	.ad-handle-title{
+		color:#fff;
+		text-align:center;
+		font-size:20px;
+		font-weight:bold;
+		padding:20px 0;
+	}
+	.ad-task{
+		color:#fff;
+		padding:10px 20px;
+		font-weight:bold;
+		border-top:1px solid #fff;
+	}
+	.ad-task:last-child{
+		border-bottom:1px solid #fff;
+	}
+	.ad-side-content{
+		float:left;
+		width:75%;
+		height:calc(100vh - 100px);
+		display:flex;
+		flex-wrap:wrap;
+		align-content:center;
+	}
+	.container{
+		display:flex;
+		max-width:90%;
+		width:100%;
+		margin:0 auto;
+		flex-wrap: wrap;
+		align-content: center;
+		background: #272883;
+		box-shadow:0px 5px 25px #fff,0px -5px 25px #fff;
+	}
+	.uploadsecs{
+		/*! padding: 10px; */
+		background: #000;
+		width:40%;
+		max-width: 224px;
+		/*! margin: 0 auto; */
+		height: 100%;
+	}
+	.uploadsecs .uploadsec{
+		color: #fff;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		/*! border: 1px solid #ccc; */
+		box-shadow: 0px 1px 2px #fff;
+		height: calc(100% / 3);
+	}
+	.uploadsec a{
+		padding:38px 0;
+		display:block;
+	}
+	.uploadsec a:hover{
+		background:#272883;
+		transition:1s ease;
+	}
+	.form{
+		width:60%;
+		margin:auto;
+		max-width: 304px;
+	}
+	.form form{
+		max-width: 90%;
+		margin:0 auto;
+	}
+      .form-group{
+	      margin-bottom: 20px;
+				width: 100%;
+				
+      }
+      .form-group label{
+	      color: #fff;
+      }
+      .form-control{
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+	    	border: 1px solid #ccc;
+		margin-top: 5px;
+		padding: 10px 12px;
+	        max-width: 100%;width: 100%;
+		background: none;
+		box-shadow: none;
+      }
+	.form-control::placeholder{
+		color: #fff;font-weight: bold;opacity: 1;
+	}
+
+	input[type="file"]:hover{
+		cursor: pointer;
+	}
+	input[type="submit"]{
+		cursor: pointer;
+		padding: 5px 20px;color: #fff;
+		font-size: 14px;font-weight: bold;
+		background: none;border:1px solid #ccc;
+	}
+	input[type="submit"]:hover{
+		color: #272883;background: #fff;
+		border:1px solid #272883;box-shadow: 0px 1px 5px #fff;
+		transition: 1s ease;
+	}
+
+
+	@media screen and (max-width:575px){
+		body{
+			position: static;
+		}
+		.admin-header{
+			left:0;right:0;
+			position:fixed;
+		}
+		.ad-title{
+			margin:0;
+		}
+		.headsec{margin-left:auto;}
+		.head-drop-links{
+			display:block;
+		}
+		.ad-main{
+			margin-top:100px;
+		}
+		#ad-sidebar{
+			display: none;
+		}
+		.ad-sidebar{
+			width: 185px;
+			display: block;
+			position: fixed;
+			z-index: 101;
+			top: 0;
+			left: 0;
+			height: 100vh;
+			background: #020818;
+			animation: anim-reverse 1s;
+		}
+		@keyframes anim-reverse {
+			0%{
+			   left: -185px;
+		       }
+		       100%{
+			   left: 0;
+		       }
+		}
+		.ad-side-content{
+			float:none;
+			width:100%;
+			height:100%;
+			display:block;
+		}
+		.uploadsecs{
+			max-width: 100%;
+			width: 100%;
+			height: 100%;
+		}
+		.uploadsecs .uploadsec{
+			height: auto;
+		}
+		.form{
+			margin:30px 0;
+			padding-right: 25px;
+			max-width: 90%;
+			width: 100%;
+		}
+	}
+
+	@media screen and (min-width:575.01px){
+		#ad-sidebar{display:block!important;}
+	}
