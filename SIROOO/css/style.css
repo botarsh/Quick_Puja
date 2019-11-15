@@ -271,8 +271,9 @@ section {
         About 01
 ==================================== */
 
-#about-right p:first-child {
+#about-right p {
     margin-bottom: 30px;
+    font-size: 14px;
 }
 
 #about-bottom {
@@ -294,7 +295,9 @@ section {
     background-color: #fff;
     padding: 80px 30px;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    height: 450px;
+    border-radius: 5px;
 }
 
 .about-item i {
