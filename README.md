@@ -1,2 +1,2 @@
 # Quick_Puja
-An online
+An online shopping website
